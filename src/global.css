@@ -1,0 +1,42 @@
+
+html, body {
+                
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+	border: lightgrey 1px solid;
+	border-radius: 5px;
+}
+.yellow-bg{
+	background-color: yellow;
+}
+
+.dark-font{
+	color: black;
+}
+
+.btn-animal-bg{
+  background-color: #c7af36;
+  border-color: #c7af36;
+}
+
+.cover-height{
+	/*height: 100%!important;*/
+}
+
+.trans-dark-color{
+	background-color: #3c2b1f42;
+}
+
+.pad-ard-10{
+	padding : 0px 10px;
+}
+
+.form-header{
+	background-color: #dcdc7f;
+    margin: 5px;
+}

@@ -1,0 +1,7 @@
+
+.home-image{   
+  background-image: url("/assets/images/vet1.jpg");
+  background-size: cover; 
+  height: 100% !important;
+  width: 100% !important;
+}

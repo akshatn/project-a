@@ -1,0 +1,172 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">Col1</div>
+    <div class="col-sm-6">Col2</div>
+    <div class="col-sm-8">Col3</div>    
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             class="form-control"
+             [minDate]="minDate"
+             [maxDate]="maxDate"
+             #dp="bsDatepicker"
+             bsDatepicker [(bsValue)]="bsValue">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dp.toggle()">Date Picker</button>
+    </div>
+  </div>
+  <br>
+   
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="drp.toggle()">Date Range Picker</button>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+</div>
+
+<div class="alert alert-danger" role="alert">
+  This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+
+<br>
+
+
+<div class="container">
+  <label class="form-group">Username</label>
+  <input type="text" class="form-control" name="">
+</div>
+
+<br>
+
+
+<carousel>
+  <slide>
+    <img src="assets/images/nature/1.jpg" alt="First slide" style="display: block; width: 60%; height: 20%">
+  </slide>
+  <slide>
+    <img src="assets/images/nature/2.jpg" alt="Second slide" style="display: block; width: 60%; height: 20%">
+  </slide>
+  <slide>
+    <img src="assets/images/nature/3.jpg" alt="Third slide" style="display: block; width: 60%; height: 20%">
+  </slide>
+</carousel>
+
+<br>
+
+<button type="button" class="btn btn-primary" [disabled]="disabled">Button</button>
+<button type="button" class="btn btn-warning" (click)="disabled = !disabled">Enable/Disable</button>
+ 
+<br>
+
+
+<accordion>
+  <accordion-group heading="Static Header, initially expanded">
+    This content is straight in the template.
+  </accordion-group>
+  <accordion-group #group>
+    <div accordion-heading class="clearfix">
+      I can have markup, too!
+      <span class="badge badge-secondary float-right pull-right">Some HTML here</span>
+    </div>
+    This is just some content to illustrate fancy headings.
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+</accordion>
+
+
+<br>
+
+<div class="btn-group" dropdown placement="bottom right">
+  <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+    This dropdown's menu is right-aligned <span class="caret"></span>
+  </button>
+  <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<br>
+
+<div>
+  <tabset>
+    <tab heading="Static title" id="tab1"><div style="height: 100px">Static content 1</div></tab>
+    <tab heading="Static Title 1"><div style="height: 100px">Static content 2</div></tab>
+    <tab heading="Static Title 2"><div style="height: 100px">Static content 3</div></tab>
+    <tab (select)="alertMe()">
+      <ng-template tabHeading>
+        <span class="badge badge-secondary">Click here!</span>
+      </ng-template>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </tab>
+  </tabset>
+</div>
+
+
+<br>
+
+<mat-checkbox>Check Me! </mat-checkbox>
+
+<br>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Company (disabled)" disabled value="Google">
+  </mat-form-field>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="First name">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Long Last Name That Will Be Truncated">
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Address">1600 Amphitheatre Pkwy</textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Address 2"></textarea>
+    </mat-form-field>
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="City">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="State">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field></td>
+  </tr></table>
+
+
+
+
+</form>
+
+<br>
+
+

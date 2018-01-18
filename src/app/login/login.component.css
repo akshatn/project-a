@@ -1,0 +1,42 @@
+.modal-content{
+      background-color: white;
+}
+
+.btn-link{
+      color:lightgray;
+}
+
+.modal-heading h2{
+      color:lightgray;
+}
+
+.modal-dialog{
+  max-width: 400px;
+}
+
+.modal-body{
+  background-color: white;
+}
+
+.mat-button-toggle-group{
+  width: 100%;
+}
+
+h1{
+  color: white;
+  font-weight: 1700;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+li{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.job-info{
+  padding-top: 35px;
+  padding-left: 40px;
+}

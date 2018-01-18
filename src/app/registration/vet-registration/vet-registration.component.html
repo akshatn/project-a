@@ -1,0 +1,93 @@
+
+<div class="container">
+	<div class="vet-reg-container">
+
+	<div class="row form-header">
+
+		   <div class="col-md-2">
+		   		<label style="padding-top: 20px"> Create an account for </label>
+		   	</div>
+		   	<div class="col-md-3">
+		       <mat-form-field>
+				  <mat-select [formControl]="userTypes">
+				     <mat-option *ngFor="let userType of userTypeList" [value]="userType">{{userType}}</mat-option>
+			     </mat-select>
+			   </mat-form-field>
+		   	</div>	          
+		 
+	</div>
+	
+
+	<div class="row">
+
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Name">
+				</mat-form-field>
+		</div>
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Last Name">
+				</mat-form-field>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-8">
+				<mat-form-field>
+					<input matInput placeholder="User Name">
+				</mat-form-field>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Create Password">
+				</mat-form-field>
+		</div>
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Confirm Password">
+				</mat-form-field>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8">
+	       <mat-form-field>
+			  <mat-select placeholder="Add Qualification" [formControl]="qualifications" multiple>
+			     <mat-option *ngFor="let qualification of qualificationList" [value]="qualification">{{qualification}}</mat-option>
+		     </mat-select>
+		   </mat-form-field>
+	   </div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Location">
+				</mat-form-field>
+		</div>
+		<div class="col-md-4">
+				<mat-form-field>
+					<input matInput placeholder="Language">
+				</mat-form-field>
+		</div>
+
+	   <div class="col-md-2 col-md-offset-2">
+	   		<button type="submit" class="btn btn-success btn-animal-bg">Next</button>
+	   </div> 
+	
+
+	</div>
+
+
+	</div>
+
+</div>
+
+
+
+
